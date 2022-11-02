@@ -20,6 +20,16 @@ function App() {
     return [...new Set(estates.map(item => item.price_range))];
   }
 
+  const handleFilterName = (name) => {
+    const filteredData = estates.filter((item) => {
+      const fullName = item.title;
+      if(fullName.toLowerCase().includes(name.toLowerCase())) {
+        return item;
+      }
+    })
+    setData(filteredData);
+  }
+
   const handleFilterLocation = (location) => {
     const filteredData = estates.filter((item) => {
       if (item.location === location) {
@@ -52,7 +62,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <Header />
+      <Header onNameFilter={handleFilterName}/>
       <Filter 
       location={generateLocationDropdown()} 
       type={generateTypeDropdown()}
