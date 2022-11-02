@@ -1,0 +1,36 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    background-color: white;
+    padding-top: 30px;
+}
+.navbar-logo {
+    margin-left: 30px;
+}
+.navbar-items {
+    text-decoration: none;
+    margin-left: -400px;
+}
+.navbar-items a {
+    margin-left: 50px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+.navbar-items .fa {
+    margin-left: 10px;
+}
+.navbar-buttons {
+    margin-right: 30px;
+}
+.navbar-buttons button {
+    margin-right: 20px;
+}
+.navbar-items .rent {
+    border: 1px solid rgb(0, 106, 255);
+    padding: 8px 15px;
+    border-radius: 4px;
+    background-color: azure;
+    color:rgb(0, 106, 255);
+}

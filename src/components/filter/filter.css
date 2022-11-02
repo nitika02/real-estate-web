@@ -1,0 +1,29 @@
+.filter {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 120px;
+    border: 1px solid white;
+    padding: 20px;
+    background-color: white;
+    border-radius: 4px;
+    margin-right: 150px;
+    padding-bottom: 10px;
+
+}
+.filter input,
+.filter select {
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    margin-left: -10px;
+    font-weight: bold;
+    color: black;
+}
+.location-search-seperator {
+    height: 60px;
+    border: 1px solid #f6f6fa;
+}
+
+.filter .search-btn {
+    margin-top: 10px;
+}
